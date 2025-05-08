@@ -5,6 +5,9 @@ import LoginView from '@/views/LoginView.vue'
 import ValidateForm from '@/views/ValidateForm.vue'
 import AppLayout from '@/views/AppLayout.vue'
 import TaskManager from '@/views/TaskManager.vue'
+import NotiFeedBack from '@/views/NotiFeedBack.vue'
+import UserView from '@/views/UserView.vue'
+import WeatherReport from '@/views/WeatherReport.vue'
 
 const routes = [
   {
@@ -40,6 +43,21 @@ const routes = [
     name: 'task',
     component: TaskManager
   },
+  {
+    path: '/user',
+    name: 'user',
+    component: UserView
+  },
+  {
+    path: '/noti',
+    name: 'noti',
+    component: NotiFeedBack
+  },
+  {
+    path: '/weather',
+    name: 'weather',
+    component: WeatherReport
+  }
 ]
 
 const router = createRouter({

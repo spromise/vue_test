@@ -27,6 +27,7 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 
 app.use(store)
 app.use(router)
+app.use(ElementPlus)
 
 const components = [
     ElButton,
